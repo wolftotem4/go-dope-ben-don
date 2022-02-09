@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "orderHashId": "AAAAAAAAAA",
+            "expireDate": 1644285600000,
+            "maxQty": null,
+            "maxTotalCost": null,
+            "inProgress": true,
+            "size": 16,
+            "total": 1235,
+            "announcement": "",
+            "shopName": "福隆便當",
+            "originator": "1",
+            "groupId": 1,
+            "unlockable": true,
+            "passwordLocked": false,
+            "remainSecondBeforeExpire": 2983
+        },
+        {
+            "orderHashId": "AAAAAAAAAA",
+            "expireDate": 1644286200000,
+            "maxQty": null,
+            "maxTotalCost": null,
+            "inProgress": true,
+            "size": 4,
+            "total": 170,
+            "announcement": "",
+            "shopName": "大苑子(自強店)",
+            "originator": "1",
+            "groupId": 1,
+            "unlockable": true,
+            "passwordLocked": false,
+            "remainSecondBeforeExpire": 3583
+        }
+    ]
+}

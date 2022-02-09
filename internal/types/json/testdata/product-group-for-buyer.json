@@ -1,0 +1,568 @@
+{
+    "data": {
+        "rows": [
+            {
+                "mergedKey": "鐵路便當:65",
+                "name": "鐵路便當",
+                "total": 585,
+                "calculatedTotal": 585,
+                "firstPrice": 65,
+                "firstCalculatedPrice": 65,
+                "size": 9,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鐵路便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "香腸便當:70",
+                "name": "香腸便當",
+                "total": 70,
+                "calculatedTotal": 70,
+                "firstPrice": 70,
+                "firstCalculatedPrice": 70,
+                "size": 1,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "香腸便當",
+                        "comment": null,
+                        "total": 70,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "軟骨便當:85",
+                "name": "軟骨便當",
+                "total": 255,
+                "calculatedTotal": 255,
+                "firstPrice": 85,
+                "firstCalculatedPrice": 85,
+                "size": 3,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "軟骨便當",
+                        "comment": null,
+                        "total": 85,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "軟骨便當",
+                        "comment": null,
+                        "total": 85,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "軟骨便當",
+                        "comment": null,
+                        "total": 85,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "滷排骨便當:80",
+                "name": "滷排骨便當",
+                "total": 480,
+                "calculatedTotal": 480,
+                "firstPrice": 80,
+                "firstCalculatedPrice": 80,
+                "size": 6,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷排骨便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷排骨便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷排骨便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷排骨便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷排骨便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷排骨便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "滷雞腿便當:80",
+                "name": "滷雞腿便當",
+                "total": 320,
+                "calculatedTotal": 320,
+                "firstPrice": 80,
+                "firstCalculatedPrice": 80,
+                "size": 4,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷雞腿便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷雞腿便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷雞腿便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "滷雞腿便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "鹹豬肉便當:80",
+                "name": "鹹豬肉便當",
+                "total": 160,
+                "calculatedTotal": 160,
+                "firstPrice": 80,
+                "firstCalculatedPrice": 80,
+                "size": 2,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鹹豬肉便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "鹹豬肉便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "浦燒鯛魚便當:80",
+                "name": "浦燒鯛魚便當",
+                "total": 80,
+                "calculatedTotal": 80,
+                "firstPrice": 80,
+                "firstCalculatedPrice": 80,
+                "size": 1,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "浦燒鯛魚便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "味噌雞便當:85",
+                "name": "味噌雞便當",
+                "total": 170,
+                "calculatedTotal": 170,
+                "firstPrice": 85,
+                "firstCalculatedPrice": 85,
+                "size": 2,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "味噌雞便當",
+                        "comment": null,
+                        "total": 85,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "味噌雞便當",
+                        "comment": null,
+                        "total": 85,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "炸雞腿便當:95",
+                "name": "炸雞腿便當",
+                "total": 285,
+                "calculatedTotal": 285,
+                "firstPrice": 95,
+                "firstCalculatedPrice": 95,
+                "size": 3,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "炸雞腿便當",
+                        "comment": null,
+                        "total": 95,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "炸雞腿便當",
+                        "comment": null,
+                        "total": 95,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "炸雞腿便當",
+                        "comment": null,
+                        "total": 95,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "炸雞排便當:80",
+                "name": "炸雞排便當",
+                "total": 240,
+                "calculatedTotal": 240,
+                "firstPrice": 80,
+                "firstCalculatedPrice": 80,
+                "size": 3,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "炸雞排便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "炸雞排便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    },
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "炸雞排便當",
+                        "comment": null,
+                        "total": 80,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            },
+            {
+                "mergedKey": "蔬菜便當:65",
+                "name": "蔬菜便當",
+                "total": 65,
+                "calculatedTotal": 65,
+                "firstPrice": 65,
+                "firstCalculatedPrice": 65,
+                "size": 1,
+                "items": [
+                    {
+                        "orderItemIds": [1],
+                        "mergedKey": "1",
+                        "mergedName": "ThisIsAName",
+                        "fullName": "蔬菜便當",
+                        "comment": null,
+                        "total": 65,
+                        "size": 1,
+                        "shipped": false,
+                        "paid": false,
+                        "cancelable": false
+                    }
+                ],
+                "shipDate": null
+            }
+        ],
+        "orderHashId": "AAAAAAAAAA",
+        "shopName": "福隆便當",
+        "originator": "1",
+        "shopTelNo": "1",
+        "inProgress": false,
+        "total": 2710,
+        "calculatedTotal": 2710,
+        "size": 35,
+        "totalBuyer": 35,
+        "formula": null
+    }
+}
