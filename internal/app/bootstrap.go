@@ -16,27 +16,39 @@ type App struct {
 }
 
 func Register() (*App, error) {
-	config, err := config.LoadConfig()
+	var (
+		cfig    *config.App
+		db      *sqlx.DB
+		real    *client.HttpClient
+		client_ client.Client
+		err     error
+	)
+
+	cfig, err = config.LoadConfig()
 	if err != nil {
 		return nil, errors.WithStack(err)
 	}
 
-	db, err := sqlx.Open("sqlite3", "./db.sqlite")
+	db, err = sqlx.Open("sqlite3", "./db.sqlite")
 	if err != nil {
 		return nil, errors.WithStack(err)
 	}
 
-	real, err := client.NewClient(client.NewDatabaseStore(db))
+	real, err = client.NewClient(client.NewDatabaseStore(db))
 	if err != nil {
 		return nil, errors.WithStack(err)
 	}
 
-	logger := client.WrapLogger(real)
+	if cfig.Debug {
+		client_ = client.WrapLogger(real)
+	} else {
+		client_ = real
+	}
 
 	return &App{
-		Config:     config,
+		Config:     cfig,
 		DB:         db,
 		RealClient: real,
-		Client:     logger,
+		Client:     client_,
 	}, nil
 }
