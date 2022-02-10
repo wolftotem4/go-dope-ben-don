@@ -1,6 +1,9 @@
 package app
 
 import (
+	"os"
+	"path/filepath"
+
 	"github.com/jmoiron/sqlx"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/pkg/errors"
@@ -15,7 +18,7 @@ type App struct {
 	Client     client.Client
 }
 
-func Register() (*App, error) {
+func Register(dir string) (*App, error) {
 	var (
 		cfig    *config.App
 		db      *sqlx.DB
@@ -24,12 +27,12 @@ func Register() (*App, error) {
 		err     error
 	)
 
-	cfig, err = config.LoadConfig()
+	cfig, err = config.LoadConfig(dir)
 	if err != nil {
 		return nil, errors.WithStack(err)
 	}
 
-	db, err = sqlx.Open("sqlite3", "./db.sqlite")
+	db, err = sqlx.Open("sqlite3", filepath.Join(dir, "db.sqlite"))
 	if err != nil {
 		return nil, errors.WithStack(err)
 	}
@@ -40,7 +43,7 @@ func Register() (*App, error) {
 	}
 
 	if cfig.Debug {
-		client_ = client.WrapLogger(real)
+		client_ = client.WrapLogger(real, filepath.Join(dir, "logs"))
 	} else {
 		client_ = real
 	}
@@ -51,4 +54,18 @@ func Register() (*App, error) {
 		RealClient: real,
 		Client:     client_,
 	}, nil
+}
+
+func GetConfigDir(appName string) (string, error) {
+	dir, err := os.UserConfigDir()
+	if err != nil {
+		return "", errors.WithStack(err)
+	}
+
+	path := filepath.Join(dir, appName)
+	if err := os.MkdirAll(path, os.ModePerm); err != nil {
+		return "", errors.WithStack(err)
+	}
+
+	return path, nil
 }

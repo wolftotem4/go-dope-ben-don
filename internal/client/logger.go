@@ -12,11 +12,13 @@ import (
 
 type ClientLogger struct {
 	Base Client
+	Dir  string
 }
 
-func WrapLogger(client Client) *ClientLogger {
+func WrapLogger(client Client, dir string) *ClientLogger {
 	return &ClientLogger{
 		Base: client,
+		Dir:  dir,
 	}
 }
 
@@ -64,7 +66,7 @@ func (client *ClientLogger) logResponse(res *http.Response) error {
 		return errors.WithStack(err)
 	}
 
-	log.SaveResponse(res, body)
+	log.SaveResponse(res, body, client.Dir)
 
 	return nil
 }

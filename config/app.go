@@ -3,6 +3,7 @@ package config
 import (
 	"errors"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 
@@ -25,7 +26,11 @@ type App struct {
 	Debug bool
 }
 
-func LoadConfig() (*App, error) {
+const (
+	EnvFileName = ".env"
+)
+
+func LoadConfig(dir string) (*App, error) {
 	var (
 		account   string
 		password  string
@@ -34,7 +39,7 @@ func LoadConfig() (*App, error) {
 		debug     bool
 	)
 
-	godotenv.Load()
+	godotenv.Load(filepath.Join(dir, EnvFileName))
 
 	account, _ = os.LookupEnv("ACCOUNT")
 	if account == "" {
