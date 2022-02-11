@@ -44,4 +44,7 @@ func TestIsExpiring(t *testing.T) {
 	if item.IsExpiring(4 * time.Minute) {
 		t.Error("expect negative value")
 	}
+	if item.IsExpiring(0) {
+		t.Error("expect negative value")
+	}
 }
