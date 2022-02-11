@@ -27,8 +27,8 @@ func TestUnmarshalProgress(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	if !time.Date(2022, 2, 8, 10, 0, 0, 0, loc).Equal(data.Data[0].ExpireDate) {
-		t.Fatalf("unexpected date: %s", data.Data[0].ExpireDate.String())
+	if !time.Date(2022, 2, 8, 10, 0, 0, 0, loc).Equal(data.Data[0].ExpireDate.Time) {
+		t.Fatalf("unexpected date: %s", data.Data[0].ExpireDate.Time.String())
 	}
 }
 

@@ -1,6 +1,7 @@
 package typesjson
 
 import (
+	"database/sql"
 	"encoding/json"
 	"fmt"
 	"net/url"
@@ -15,20 +16,20 @@ type Progress struct {
 }
 
 type ProgressItem struct {
-	Announcement             string    `json:"announcement"`
-	ExpireDate               time.Time `json:"expireDate"`
-	GroupId                  int       `json:"groupId"`
-	InProgress               bool      `json:"inProgress"`
-	MaxQty                   int       `json:"maxQty"`
-	MaxTotalCost             int       `json:"maxTotalCost"`
-	OrderHashId              string    `json:"orderHashId"`
-	Originator               string    `json:"originator"`
-	PasswordLocked           bool      `json:"passwordLocked"`
-	RemainSecondBeforeExpire int       `json:"remainSecondBeforeExpire"`
-	ShopName                 string    `json:"shopName"`
-	Size                     int       `json:"size"`
-	Total                    int       `json:"total"`
-	Unlockable               bool      `json:"unlockable"`
+	Announcement             string       `json:"announcement"`
+	ExpireDate               sql.NullTime `json:"expireDate"`
+	GroupId                  int          `json:"groupId"`
+	InProgress               bool         `json:"inProgress"`
+	MaxQty                   int          `json:"maxQty"`
+	MaxTotalCost             int          `json:"maxTotalCost"`
+	OrderHashId              string       `json:"orderHashId"`
+	Originator               string       `json:"originator"`
+	PasswordLocked           bool         `json:"passwordLocked"`
+	RemainSecondBeforeExpire int          `json:"remainSecondBeforeExpire"`
+	ShopName                 string       `json:"shopName"`
+	Size                     int          `json:"size"`
+	Total                    int          `json:"total"`
+	Unlockable               bool         `json:"unlockable"`
 }
 
 func (item *ProgressItem) IsExpiring(priorTime time.Duration) bool {
@@ -43,7 +44,7 @@ func (item *ProgressItem) UnmarshalJSON(data []byte) error {
 	type Alias ProgressItem
 
 	aux := struct {
-		ExpireDate int64 `json:"expireDate"`
+		ExpireDate *int64 `json:"expireDate"`
 		*Alias
 	}{
 		Alias: (*Alias)(item),
@@ -53,7 +54,11 @@ func (item *ProgressItem) UnmarshalJSON(data []byte) error {
 		return errors.WithStack(err)
 	}
 
-	item.ExpireDate = time.UnixMilli(aux.ExpireDate)
+	if aux.ExpireDate == nil {
+		item.ExpireDate = sql.NullTime{Time: time.Time{}, Valid: false}
+	} else {
+		item.ExpireDate = sql.NullTime{Time: time.UnixMilli(*aux.ExpireDate), Valid: true}
+	}
 
 	return nil
 }
