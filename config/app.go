@@ -23,6 +23,9 @@ type App struct {
 	// How long before to inform user there is prompt items
 	PriorTime time.Duration
 
+	// How often to fetch latest data
+	UpdateInterval time.Duration
+
 	Debug bool
 }
 
@@ -36,6 +39,7 @@ func LoadConfig(dir string) (*App, error) {
 		password  string
 		name      string
 		priorTime = 5 * time.Minute
+		interval  = 10 * time.Minute
 		debug     bool
 	)
 
@@ -65,10 +69,11 @@ func LoadConfig(dir string) (*App, error) {
 	}
 
 	return &App{
-		Account:   account,
-		Password:  password,
-		Name:      name,
-		PriorTime: priorTime,
-		Debug:     debug,
+		Account:        account,
+		Password:       password,
+		Name:           name,
+		PriorTime:      priorTime,
+		UpdateInterval: interval,
+		Debug:          debug,
 	}, nil
 }

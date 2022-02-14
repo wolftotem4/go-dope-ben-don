@@ -28,12 +28,16 @@ func TestUnmarshalProgress(t *testing.T) {
 	}
 
 	if !time.Date(2022, 2, 8, 10, 0, 0, 0, loc).Equal(data.Data[0].ExpireDate.Time) {
-		t.Fatalf("unexpected date: %s", data.Data[0].ExpireDate.Time.String())
+		t.Errorf("unexpected date: %s", data.Data[0].ExpireDate.Time.String())
+	}
+
+	if data.Data[0].RemainSecondBeforeExpire != 2983*time.Second {
+		t.Errorf("unexpected value: %d", data.Data[0].RemainSecondBeforeExpire)
 	}
 }
 
 func TestIsExpiring(t *testing.T) {
-	var item = &ProgressItem{RemainSecondBeforeExpire: 5 * 60}
+	var item = &ProgressItem{RemainSecondBeforeExpire: 5 * 60 * time.Second}
 
 	if !item.IsExpiring(6 * time.Minute) {
 		t.Error("expect positive value")
