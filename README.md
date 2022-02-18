@@ -12,7 +12,7 @@
 2.  安裝 tdm-gcc (x64) (https://jmeubank.github.io/tdm-gcc/download/)
 3.  抓下專案
     ```shell
-    git clone git@github.com:wolftotem4/go-dope-ben-don.git
+    git clone https://github.com/wolftotem4/go-dope-ben-don.git
     ```
 4.  切換目錄
     ```shell
