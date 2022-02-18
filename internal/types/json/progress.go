@@ -33,7 +33,7 @@ type ProgressItem struct {
 }
 
 func (item *ProgressItem) IsExpiring(priorTime time.Duration) bool {
-	return item.RemainSecondBeforeExpire > 0 && time.Duration(item.RemainSecondBeforeExpire) <= priorTime
+	return item.RemainSecondBeforeExpire > 0 && item.RemainSecondBeforeExpire <= priorTime
 }
 
 func (item *ProgressItem) GetPath() string {
